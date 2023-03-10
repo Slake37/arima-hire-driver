@@ -45,18 +45,18 @@ function Dashboard() {
 
         <table className="table-auto w-full">
           <thead>
-            <th className="text-sm md:text-xl">Name</th>
-            <th className="text-sm md:text-xl">Surname</th>
-            <th className="text-sm md:text-xl">Phone number</th>
-            <th className="hidden md:flex md:text-xl">E-mail</th>
+            <th className="text-lg md:text-2xl">Name</th>
+            <th className="text-lg hidden md:flex md:text-2xl">Surname</th>
+            <th className="text-lg md:text-2xl">Phone number</th>
+            <th className="hidden md:flex md:text-2xl">E-mail</th>
           </thead>
           <tbody className="text-center ">
             {bookings?.map((booking) => (
               <tr className="odd:bg-white even:bg-slate-50">
-                <td className="text-xs md:text-lg">{booking.formData.name}</td>
-                <td className="text-xs md:text-lg">{booking.formData.surname}</td>
-                <td className="text-xs md:text-lg">{booking.formData.phoneNumber}</td>
-                <td className="hidden md:flex md:text-lg">{booking.formData.email}</td>
+                <td className="text-md md:text-xl">{booking.formData.name}</td>
+                <td className="text-md hidden md:flex md:text-xl">{booking.formData.surname}</td>
+                <td className="text-md md:text-xl">{booking.formData.phoneNumber}</td>
+                <td className="hidden md:flex md:text-xl">{booking.formData.email}</td>
               </tr>
             ))}
           </tbody>
